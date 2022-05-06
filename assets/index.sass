@@ -11,12 +11,17 @@
 body
     overflow-x: hidden
 
+@mixin mob()
+    @media ( max-width:  600px)
+        @content
+        
 @mixin flex
     display: flex
     text-align: center
     align-items: center
     justify-content: center
     flex-direction: column
+
 
 .progressBar
     height: 100vh
@@ -33,6 +38,10 @@ body
         background: #ccc
         position: relative
         text-align: left
+
+        @include mob
+            width: 420px
+
 
         i
             width: 0%
@@ -60,3 +69,7 @@ body
                 &:last-child
                     border-right: none
 
+
+    // .progressBarStart
+    //     width: 300px
+    //     margin: 20px

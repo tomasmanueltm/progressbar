@@ -2,6 +2,7 @@
   font-family: "fontS";
   src: url("Lato.ttf");
 }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -23,6 +24,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .progressBar .progressBarStart {
   padding: 0.1px;
   width: 500px;
@@ -33,6 +35,13 @@ body {
   position: relative;
   text-align: left;
 }
+
+@media (max-width: 600px) {
+  .progressBar .progressBarStart {
+    width: 420px;
+  }
+}
+
 .progressBar .progressBarStart i {
   width: 0%;
   float: left;
@@ -41,23 +50,25 @@ body {
   background: #666;
   border-radius: 5px;
 }
+
 .progressBar div {
   margin: 5px 0;
 }
+
 .progressBar div p {
   padding: 15px 0;
 }
+
 .progressBar div span a {
   color: #666;
   margin: 0 2px;
   padding: 0 8px;
   font-weight: 900;
-  font-size: 0.9rem;
+  font-size: .9rem;
   text-decoration: none;
   border-right: 2px solid #ccc;
 }
+
 .progressBar div span a:last-child {
   border-right: none;
 }
-
-/*# sourceMappingURL=index.css.map */
